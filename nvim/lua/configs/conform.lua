@@ -1,4 +1,3 @@
-
   local options = {
   lsp_fallback = true,
 

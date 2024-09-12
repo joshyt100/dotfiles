@@ -5,10 +5,10 @@
 local M = {}
 
 M.ui = {
-	theme = "everforest",
+	theme = "oceanic-next",
   transparency = true,
   cmp = {lspkind = false},
-  lsp = {signature = {enabled = false}},
+  lsp = {signature = {enabled = true}},
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
