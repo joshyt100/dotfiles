@@ -4,16 +4,22 @@
 ---@type ChadrcConfig
 local M = {}
 
+
 M.ui = {
-	theme = "oceanic-next",
+	theme = "doomchad",
   transparency = true,
-  cmp = {lspkind = false},
-  lsp = {signature = {enabled = true}},
+  -- cmp = {lspkind = false},
+  -- lsp = {signature = {enabled = true}},
+  hl_override = {
+        Comment = { fg = "#b0b0b0" },
+    },
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
 	-- },
+  	-- },
 }
+
 
 return M
