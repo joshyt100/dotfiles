@@ -90,7 +90,11 @@ return {
     },
     lazy = false,
     config = function()
-      require("codeium").setup {}
+      require("codeium").setup {
+        virtual_text = {
+          enabled = true,
+        },
+      }
     end,
   },
   -- lazy.nvim

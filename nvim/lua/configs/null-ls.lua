@@ -5,6 +5,7 @@ local opts = {
   sources = {
     -- PYTHON
     null_ls.builtins.formatting.black,
+    null_ls.builtins.diagnostics.flake8,
     null_ls.builtins.formatting.stylua,
     -- null_ls.builtins.diagnostics.flake8,
     -- null_ls.builtins.diagnostics.mypy.with({
@@ -27,6 +28,13 @@ local opts = {
     -- WEB DEVELOPMENT
     null_ls.builtins.formatting.prettierd,
   },
+
+  vim.api.nvim_create_autocmd("BufWritePre", {
+    pattern = "*.py",
+    callback = function()
+      vim.lsp.buf.formatting_sync()
+    end,
+  }),
 
   -- AUTO FOMAT ON SAVE OPTION
   on_attach = function(client, bufnr)
