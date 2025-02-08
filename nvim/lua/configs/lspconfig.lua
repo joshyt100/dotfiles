@@ -7,7 +7,11 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 -- PYTHON
-lspconfig.pyright.setup {}
+lspconfig.pyright.setup {
+  on_init = on_init,
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
 
 -- HTML
 lspconfig.emmet_ls.setup {

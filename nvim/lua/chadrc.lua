@@ -12,7 +12,10 @@ M.base46 = {
   hl_override = {
     Comment = { fg = "#b0b0b0" },
   },
-
+  tabufline = {
+    enabled = false,
+  },
+  -- -- theme_ui = {
   -- hl_override = {
   -- 	Comment = { italic = true },
   -- 	["@comment"] = { italic = true },
