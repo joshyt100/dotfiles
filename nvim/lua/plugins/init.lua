@@ -37,6 +37,7 @@ return {
         "mypy",
         "pylint",
         "black",
+        "ruff",
         -- For Web Development
         "typescript-language-server",
         "tailwindcss-language-server",

@@ -5,15 +5,12 @@
 local M = {}
 
 M.base46 = {
-  theme = "poimandres",
+  theme = "solarized_osaka",
   transparency = true,
   -- cmp = {lspkind = false},
   -- lsp = {signature = {enabled = true}},
   hl_override = {
     Comment = { fg = "#b0b0b0" },
-  },
-  tabufline = {
-    enabled = false,
   },
   -- -- theme_ui = {
   -- hl_override = {
@@ -22,5 +19,11 @@ M.base46 = {
   -- },
   -- },
 }
+
+-- M.ui = {
+--   tabufline = {
+--     enabled = false,
+--   },
+-- }
 
 return M
