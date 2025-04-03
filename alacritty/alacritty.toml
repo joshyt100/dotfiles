@@ -1,6 +1,6 @@
 general.import = [
-"~/.config/alacritty/themes/themes/coolnight.toml",
-# "~/.config/alacritty/themes/themes/tokyo-night-storm.toml",
+# "~/.config/alacritty/themes/themes/coolnight.toml", main
+"~/.config/alacritty/themes/themes/tokyo-night-storm.toml",
 # "~/.config/alacritty/themes/themes/tokyo-night.toml",
 # "~/.config/alacritty/themes/themes/marine_dark.toml",
 # "~/.config/alacritty/themes/themes/catppuccin_macchiato.toml"
@@ -16,8 +16,8 @@ padding.y = 10
 
 decorations = "Buttonless"
 
-opacity = 0.91
-blur = true
+opacity = 0.8
+# blur = true
 
 option_as_alt = "Both"
 
