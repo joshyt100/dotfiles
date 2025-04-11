@@ -5,7 +5,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "tokyodark",
+  theme = "catppuccin",
   transparency = true,
   -- cmp = {lspkind = false},
   -- lsp = {signature = {enabled = true}},
