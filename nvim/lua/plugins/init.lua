@@ -1,5 +1,5 @@
 return {
-  "Nvchad/nvcommunity",
+  -- "Nvchad/nvcommunity",
   -- { import = "nvcommunity.completion.codeium" },
   -- { "codeium.nvim", opts = { virtual_text = { enable = true } } },
 
@@ -84,27 +84,18 @@ return {
   --     return require "configs.null-ls"
   --   end,
   -- },
-  {
-    "Exafunction/codeium.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "hrsh7th/nvim-cmp",
-    },
 
-    lazy = false,
-    config = function()
-      require("codeium").setup {
-        virtual_text = {
-          enabled = true,
-          map_keys = true,
-          key_bindings = {
-            accept = "<C-y>",
-            next = "<C-n>",
-            prev = "<C-p>",
-          },
-        },
-      }
-    end,
+  --
+  --
+
+  -- in your lazy.nvim config (or packer) for windsurf.nvim / codeium.nvim:
+  --
+  --#region
+
+  -- Remove the `use` here if you're using folke/lazy.nvim.
+  {
+    "Exafunction/windsurf.vim",
+    event = "BufEnter",
   },
   -- lazy.nvim
   -- Auto close tag for jsx, tsx
